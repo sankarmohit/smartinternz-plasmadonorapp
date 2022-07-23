@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block title %}About{% endblock %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+<body>
+    {% block content %}
+    {{ super() }}
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+        <div class="has-bg-img bg-purple bg-blend-overlay">
+            
+            <img class="bg-img" src="../static/img/build-a-thon.png" alt="...">
+          
+        
+            <p>
+                Project Build-A-Thon is a unique initiative launched by SmartInternz in collaboration with IBM Global
+                University Programs exclusively to help Faculty upskill their technical skills on emerging technologies
+                via project based hands-on learning experience.
+            </p>
+            <p>
+                This program is packed with no-charge access to E-learning, Technical bootcamps, Expert mentoring,
+                Project Build-A-Thon and many exciting benefits.
+            </p>
+            <p>
+                To learn more about it <a
+                    href='https://smartinternz.com/ibm-build-a-thon-2022'>https://smartinternz.com/ibm-build-a-thon-2022</a>
+            </p>
+        </div> </div>
+        <div class="col-md-1">
+
+        </div>
+    </div>
+
+
+    {% endblock %}
+</body>
+{% block js%}
+{{ super() }}
+{% endblock %}

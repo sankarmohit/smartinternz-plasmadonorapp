@@ -12,6 +12,10 @@ conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=8e359033-a1c9-4643-82ef-8ac06f510
 def index():
 	return render_template('index.html')
 
+@app.route('/aboutus')
+def aboutus():
+	return render_template('aboutus.html')
+
 @app.route('/home')
 def home():
     return render_template('home.html')
