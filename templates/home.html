@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+<body>
+  {% block content %}
+  {{ super() }}
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          Learn All About Plasma
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is plasma in blood?</h5>
+          <p class="card-text">
+            Plasma is the liquid portion of blood. About 55% of our blood is plasma, and the remaining 45% are red blood
+            cells, white blood cells and platelets that are suspended in the plasma.
+
+            Plasma is about 92% water. It also contains 7% vital proteins such as albumin, gamma globulin and
+            anti-hemophilic factor, and 1% mineral salts, sugars, fats, hormones and vitamins.
+          </p>
+          <p class="card-text">
+            Plasma serves four important functions in our body:
+          <ol>
+            <li>Helps maintain blood pressure and volume.</li>
+            <li>Supply critical proteins for blood clotting and immunity.</li>
+            <li>Carries electrolytes such as sodium and potassium to our muscles.</li> 
+            <li>Helps to maintain a proper pH balance in the body, which supports cell function.</li>
+          </ol>
+
+
+          </p>
+          
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          Plasma Donation
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">What is a plasma donation?</h5>
+          <p class="card-text">
+            In a plasma-only donation, the liquid portion of the donor’s blood is separated from the cells. Blood is drawn from one arm and sent through a high-tech machine that collects the plasma. The donor’s red blood cells and platelets are then returned to the donor along with some saline. The process is safe and only takes a few minutes longer than donating whole blood.
+            Donated plasma is frozen within 24 hours of being donated to preserve its valuable clotting factors. It can be stored for up to one year and thawed for transfusion to a patient when needed. Red Cross donations are often used directly for hospital patient transfusions, rather than pharmaceutical uses.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          Want to donate?
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Who should donate plasma?<br></h5>
+          <p class="card-text">
+            The Red Cross urges people with type AB blood to consider a plasma donation. AB is the only universal plasma and can be given to patients of any blood type. This means that type AB plasma transfusions can be given immediately, without losing precious time determining if the patient’s blood type is compatible. In emergency medicine, such as caring for a major trauma or burn patient, time saved can mean the difference between life and death.
+          </p>
+          <a href="/register" class="btn btn-primary">Register your name</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+
+    {% endblock %}
+</body>
+{% block js%}
+{{ super() }}
+{% endblock %}
