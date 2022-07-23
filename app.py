@@ -41,6 +41,7 @@ def requested():
 		dictionary = ibm_db.fetch_both(stmt)
 		while dictionary != False:
 			phone = dictionary[0]
+			#url="https://www.fast2sms.com/dev/bulk?authorization=ih4ZCvpdVmLHzqo9lTafI8gGPxDXkc620teWFQjUSrY1wuyOnbC5GuM9dg2XtRlEefQhiHva08n6KJwb&sender_id=FSTSMS&message="+msg+"&language=english&route=v3&numbers="+str(phone)
 			url="https://www.fast2sms.com/dev/bulk?authorization=xCXuwWTzyjOD2ARd1EngbH3a7tKIq5PklJ8YSf0Lh4FQZecs9iNI1dSvuqprxFwCKYJXA5amQkBE36Rl&sender_id=FSTSMS&message="+msg+"&language=english&route=p&numbers="+str(phone)
 			response = requests.request("GET", url)
 			print(response.text)
